@@ -123,7 +123,7 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 
 🚀 Live Demo
 
-🔗 Live Website: (Add your deployed Vercel link here)
+🔗 Live Website: https://portfolio-web-self-sigma-58.vercel.app/
 
 📬 Contact
 
