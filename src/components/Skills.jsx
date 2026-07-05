@@ -22,17 +22,9 @@ import {
   SiApachekafka 
 } from  "react-icons/si"
 import { VscCode } from "react-icons/vsc"
-import PostmanOriginalIcon from '@devicon/react/postman/original';
 
-// 1. Create a wrapper component so Postman behaves exactly like react-icons
-const PostmanIconWrapper = ({ className, style }) => {
-  return (
-    <div className={className} style={style}>
-      {/* We match the text-3xl font size (approx 30px) used in your loop */}
-      <PostmanOriginalIcon size="30px" />
-    </div>
-  );
-};
+
+
 
 export default function Skills() {
   const skillCategories = [
@@ -79,8 +71,7 @@ export default function Skills() {
         { name: "GitHub", icon: FaGithub, color: "#ffffff" },
         { name: "Docker", icon: FaDocker, color: "#2496ED" },
         { name: "Kafka", icon: SiApachekafka, color: "#ffffff" },
-        // 2. Reference the unified wrapper here with the exact brand color
-        { name: "Postman", icon: PostmanIconWrapper, color: "#EF5B25" },
+       
       ],
     },
   ]
@@ -95,6 +86,7 @@ export default function Skills() {
     "Front-End Development",
     "Cloud Basics",
     "System Design Basics",
+    "Postman",
   ]
 
   return (
