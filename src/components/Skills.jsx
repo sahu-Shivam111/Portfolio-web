@@ -11,6 +11,7 @@ import { SiC, SiCplusplus,SiMysql, SiMongodb, SiExpress ,SiJavascript, } from "r
 import { VscCode } from "react-icons/vsc"
 import {  FaGithub,FaDocker, FaJava } from "react-icons/fa"
 import { SiSupabase, SiSpringboot, SiApachekafka } from "react-icons/si"
+import PostmanOriginalIcon from '@devicon/react/postman/original
 
 export default function Skills() {
   const skillCategories = [
@@ -59,6 +60,7 @@ export default function Skills() {
          { name: "GitHub", icon: FaGithub, color: "#ffffff" },
          { name: "Docker", icon: FaDocker, color: "#2496ED" },
        { name: "Kafka", icon: SiApachekafka, color: "#ffffff" },
+        {name:"Postman", icon:PostmanoriginalIcon, color:"#EF5B25"},
        
       ],
     },
