@@ -12,7 +12,7 @@ export default function Loader() {
         <p className="text-sm mb-2 text-center text-cyan-300 font-medium tracking-wide">
           Loading 3D Experience
         </p>
-        <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden border border-white/5">
+        <div className="w-full h-2 bg-white rounded-full overflow-hidden border border-white/5">
           <div 
             className="h-full bg-cyan-400 transition-all duration-300 ease-out"
             style={{ 
