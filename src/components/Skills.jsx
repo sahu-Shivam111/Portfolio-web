@@ -11,7 +11,7 @@ import { SiC, SiCplusplus,SiMysql, SiMongodb, SiExpress ,SiJavascript, } from "r
 import { VscCode } from "react-icons/vsc"
 import {  FaGithub,FaDocker, FaJava } from "react-icons/fa"
 import { SiSupabase, SiSpringboot, SiApachekafka } from "react-icons/si"
-import PostmanOriginalIcon from '@devicon/react/postman/original
+import PostmanOriginalIcon from '@devicon/react/postman/original';
 
 export default function Skills() {
   const skillCategories = [
