@@ -6,24 +6,26 @@ import Skills from "./components/Skills"
 import Achievements from "./components/Journey"
 import Contact from "./components/Contact"
 import ThreeBackground from "./components/ThreeBackground"
-import { Loader } from "@react-three/drei"
+import CustomLoader from "./components/Loader" // 👈 Import here
 
 export default function App() {
   return (
    <div className="relative min-h-screen overflow-x-hidden">
-  <ThreeBackground />
-  <div className="relative z-10">
-    <Navbar />
-    <main>
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Achievements />
-      <Contact />
-    </main>
-  </div>
-   <Loader />
-</div>
+     {/* ✅ Placed on top layout layer */}
+     <CustomLoader /> 
+
+     <ThreeBackground />
+     <div className="relative z-10">
+       <Navbar />
+       <main>
+         <Hero />
+         <About />
+         <Projects />
+         <Skills />
+         <Achievements />
+         <Contact />
+       </main>
+     </div>
+   </div>
   )
 }
