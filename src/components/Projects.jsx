@@ -26,7 +26,7 @@ export default function Projects() {
   description: "A full-stack online bookstore with user authentication, book management, image uploads, and shopping cart functionality.",
   stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
   icon: FaBookOpen,
-  color: "#ff005d",
+  color: "#8B5E3C",
   demoLink: "https://book-store-puce.vercel.app/",
   sourceLink: "https://github.com/sahu-Shivam111/Book-Store"
 },
@@ -36,7 +36,7 @@ export default function Projects() {
   description: "A full-stack job application tracker with user authentication, job management, application status tracking, and search functionality.",
   stack: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
   icon: FaBriefcase,
-  color: "#ff005d",
+  color: "#52452F",
   demoLink: "https://careerpulse-tracker-gamma.vercel.app/login",
   sourceLink: "https://github.com/sahu-Shivam111/careerpulse-tracker",
 },
@@ -46,7 +46,7 @@ export default function Projects() {
   description: "AI-powered note management platform with authentication, CRUD operations, and note summarization.",
   stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "OpenAI API"],
   icon: BsFileTextFill,
-  color: "#60A5FA", // Light Blue
+  color: "#1D4ED8", 
   demoLink: "https://your-demo-link.vercel.app/",
   sourceLink: "https://github.com/your-username/noteflow",
 },
