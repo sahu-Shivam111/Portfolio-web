@@ -24,7 +24,7 @@ export default function Projects() {
   name: "BookVerse – E-Commerce Platform",
   description: "A full-stack online bookstore with user authentication, book management, image uploads, and shopping cart functionality.",
   stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-  icon: FaBook,
+  icon: FaBookOpen,
   color: "#ff005d",
   demoLink: "https://book-store-puce.vercel.app/",
   sourceLink: "https://github.com/sahu-Shivam111/Book-Store"
