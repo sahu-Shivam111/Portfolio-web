@@ -9,11 +9,12 @@ import {
   FaCloudSun,
   FaVideo,
   FaGithub,
-  FaExternalLinkAlt,
-  FaStickyNote,  
+  FaExternalLinkAlt,  
   FaBriefcase,    
   FaBookOpen,     
 } from "react-icons/fa"
+import { BsFileTextFill } from "react-icons/bs";
+
 
 export default function Projects() {
   const [activeproject, setactiveproject] = useState(null)
@@ -39,15 +40,15 @@ export default function Projects() {
   demoLink: "https://careerpulse-tracker-gamma.vercel.app/login",
   sourceLink: "https://github.com/sahu-Shivam111/careerpulse-tracker",
 },
-      {
+     {
   id: 3,
   name: "NoteFlow – AI Powered Note Management Platform",
-  description: "A full-stack note management platform with AI-powered note summarization, user authentication, CRUD operations, and search functionality.",
+  description: "AI-powered note management platform with authentication, CRUD operations, and note summarization.",
   stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "OpenAI API"],
-  icon: FaStickyNote,
-  color: "#ff005d",
-  demoLink: "https://vercel.com/sahu-shivam111s-projects/note-flow",
-  sourceLink: "https://github.com/sahu-Shivam111/NoteFlow",
+  icon: BsFileTextFill,
+  color: "#60A5FA", // Light Blue
+  demoLink: "https://your-demo-link.vercel.app/",
+  sourceLink: "https://github.com/your-username/noteflow",
 },
      {
       id: 4,
