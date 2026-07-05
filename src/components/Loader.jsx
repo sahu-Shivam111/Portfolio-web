@@ -12,9 +12,9 @@ export default function Loader() {
         <p className="text-sm mb-2 text-center text-cyan-300 font-medium tracking-wide">
           Loading 3D Experience
         </p>
-        <div className="w-full h-2 bg-white rounded-full overflow-hidden border border-white/5">
+        <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden border border-white/5">
           <div 
-            className="h-full bg-cyan-400 transition-all duration-300 ease-out"
+            className="h-full bg-white transition-all duration-300 ease-out"
             style={{ 
               width: `${progress}%`,
               boxShadow: "0 0 14px rgba(6, 182, 212, 0.8)"
