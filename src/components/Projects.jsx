@@ -37,7 +37,7 @@ export default function Projects() {
   stack: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
   icon: FaBriefcase,
   color: "#6B4F2A",
-  demoLink: "https://careerpulse-tracker-gamma.vercel.app/login",
+  demoLink: "https://careerpulse-tracker-gamma.vercel.app/",
   sourceLink: "https://github.com/sahu-Shivam111/careerpulse-tracker",
 },
      {
@@ -47,8 +47,8 @@ export default function Projects() {
   stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "OpenAI API"],
   icon: BsFileTextFill,
   color: "#1D4ED8", 
-  demoLink: "https://your-demo-link.vercel.app/",
-  sourceLink: "https://github.com/your-username/noteflow",
+  demoLink: "https://note-flow-nu-one.vercel.app/",
+  sourceLink: "https://github.com/sahu-Shivam111/NoteFlow/",
 },
      {
       id: 4,
