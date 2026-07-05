@@ -20,7 +20,7 @@ import {
   SiSupabase, 
   SiSpringboot, 
   SiApachekafka 
-} from "react-icons/si"
+} from  "react-icons/si"
 import { VscCode } from "react-icons/vsc"
 import PostmanOriginalIcon from '@devicon/react/postman/original';
 
