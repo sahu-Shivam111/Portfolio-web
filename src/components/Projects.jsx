@@ -36,7 +36,7 @@ export default function Projects() {
   description: "A full-stack job application tracker with user authentication, job management, application status tracking, and search functionality.",
   stack: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
   icon: FaBriefcase,
-  color: "#52452F",
+  color: "#6B4F2A",
   demoLink: "https://careerpulse-tracker-gamma.vercel.app/login",
   sourceLink: "https://github.com/sahu-Shivam111/careerpulse-tracker",
 },
