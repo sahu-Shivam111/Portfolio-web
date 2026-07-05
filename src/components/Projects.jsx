@@ -2,22 +2,55 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import {
    FaHospital,
-    FaChess,
-    FaQrcode,
+ FaChess,
+   FaQrcode,
   FaShoppingCart,
   FaTasks,
   FaCloudSun,
   FaVideo,
   FaGithub,
   FaExternalLinkAlt,
+  FaStickyNote,  
+  FaBriefcase,    
+  FaBookOpen,     
 } from "react-icons/fa"
 
 export default function Projects() {
   const [activeproject, setactiveproject] = useState(null)
 
   const projects = [
+      {
+  id: 1,
+  name: "BookVerse – E-Commerce Platform",
+  description: "A full-stack online bookstore with user authentication, book management, image uploads, and shopping cart functionality.",
+  stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+  icon: FaBook,
+  color: "#ff005d",
+  demoLink: "https://book-store-puce.vercel.app/",
+  sourceLink: "https://github.com/sahu-Shivam111/Book-Store"
+},
      {
-      id: 1,
+  id: 2,
+  name: "Career-Pulse – Job Application Tracker",
+  description: "A full-stack job application tracker with user authentication, job management, application status tracking, and search functionality.",
+  stack: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
+  icon: FaBriefcase,
+  color: "#ff005d",
+  demoLink: "https://careerpulse-tracker-gamma.vercel.app/login",
+  sourceLink: "https://github.com/sahu-Shivam111/careerpulse-tracker",
+},
+      {
+  id: 3,
+  name: "NoteFlow – AI Powered Note Management Platform",
+  description: "A full-stack note management platform with AI-powered note summarization, user authentication, CRUD operations, and search functionality.",
+  stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "OpenAI API"],
+  icon: FaStickyNote,
+  color: "#ff005d",
+  demoLink: "https://vercel.com/sahu-shivam111s-projects/note-flow",
+  sourceLink: "https://github.com/sahu-Shivam111/NoteFlow",
+},
+     {
+      id: 4,
       name: "Blood Bank Management System",
       description: "Donor, inventory, and request management system",
       stack: ["React", "Supabase"],
@@ -27,7 +60,7 @@ export default function Projects() {
       sourceLink: "https://github.com/sahu-Shivam111/blood_bank",
     },
     {
-      id: 2,
+      id: 5,
       name: "Chess Game",
       description: "Interactive chess game with rules logic",
       stack: ["JavaScript" ," Chess Engine"],
@@ -37,7 +70,7 @@ export default function Projects() {
       sourceLink: "https://github.com/sahu-Shivam111/chess-game",
     },
     {
-      id: 3,
+      id: 6,
       name: "Video Chat Platform",
       description: "WebRTC based multi-peer video chat with modern UI",
       stack: ["WebRTC", "Node.js", "Socket.io"],
@@ -49,7 +82,7 @@ export default function Projects() {
 
    
     {
-      id: 4,
+      id: 7,
       name: "E-Commerce Website",
       description: "Secure login, product catalog, cart system and order flow",
       stack: ["HTML", "CSS", "JavaScript" ,"React"],
@@ -59,7 +92,7 @@ export default function Projects() {
       sourceLink: "https://github.com/sahu-Shivam111/React-site",
     },
     {
-      id: 5,
+      id: 8,
       name: "Weather App",
       description: "Real-time weather updates using public API",
       stack: ["React", "API", "CSS"],
@@ -69,7 +102,7 @@ export default function Projects() {
       sourceLink: "https://github.com/sahu-Shivam111/React-Weather-app",
     },
     {
-      id: 6,
+      id: 9,
       name: "QR Code Generator",
       description: "Generate QR codes instantly",
       stack: ["HTML", "CSS", "JavaScript" ],
@@ -79,7 +112,7 @@ export default function Projects() {
       sourceLink: "https://github.com/sahu-Shivam111/QR-Code-Generator",
     },
     {
-      id: 7,
+      id: 10,
       name: "To-Do List Web App",
       description: "Responsive task manager with local storage support",
       stack: ["HTML", "CSS", "JavaScript"],
