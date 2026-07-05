@@ -6,26 +6,46 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaGithub,
+  FaDocker,
+  FaJava
 } from "react-icons/fa"
-import { SiC, SiCplusplus,SiMysql, SiMongodb, SiExpress ,SiJavascript, } from "react-icons/si"
+import { 
+  SiC, 
+  SiCplusplus,
+  SiMysql, 
+  SiMongodb, 
+  SiExpress,
+  SiJavascript,
+  SiSupabase, 
+  SiSpringboot, 
+  SiApachekafka 
+} from "react-icons/si"
 import { VscCode } from "react-icons/vsc"
-import {  FaGithub,FaDocker, FaJava } from "react-icons/fa"
-import { SiSupabase, SiSpringboot, SiApachekafka } from "react-icons/si"
 import PostmanOriginalIcon from '@devicon/react/postman/original';
+
+// 1. Create a wrapper component so Postman behaves exactly like react-icons
+const PostmanIconWrapper = ({ className, style }) => {
+  return (
+    <div className={className} style={style}>
+      {/* We match the text-3xl font size (approx 30px) used in your loop */}
+      <PostmanOriginalIcon size="30px" />
+    </div>
+  );
+};
 
 export default function Skills() {
   const skillCategories = [
     {
-  title: "Languages",
-  skills: [
-    { name: "C", icon: SiC, color: "#A8B9CC" },
-    { name: "C++", icon: SiCplusplus, color: "#00599C" },
-    { name: "Java", icon: FaJava, color: "#ED8B00" },
-    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-    { name: "SQL", icon: SiMysql, color: "#4479A1" },
-  ],
-},
-
+      title: "Languages",
+      skills: [
+        { name: "C", icon: SiC, color: "#A8B9CC" },
+        { name: "C++", icon: SiCplusplus, color: "#00599C" },
+        { name: "Java", icon: FaJava, color: "#ED8B00" },
+        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+        { name: "SQL", icon: SiMysql, color: "#4479A1" },
+      ],
+    },
     {
       title: "Frontend",
       skills: [
@@ -38,7 +58,6 @@ export default function Skills() {
     {
       title: "Backend",
       skills: [
-       
         { name: "Node.js", icon: FaNodeJs, color: "#339933" },
         { name: "Express.js", icon: SiExpress, color: "#ffffff" },
         { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
@@ -49,7 +68,7 @@ export default function Skills() {
       skills: [
         { name: "MySQL", icon: SiMysql, color: "#4479A1" },
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-         { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
+        { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
       ],
     },
     {
@@ -57,11 +76,11 @@ export default function Skills() {
       skills: [
         { name: "Git", icon: FaGitAlt, color: "#F05032" },
         { name: "VS Code", icon: VscCode, color: "#007ACC" },
-         { name: "GitHub", icon: FaGithub, color: "#ffffff" },
-         { name: "Docker", icon: FaDocker, color: "#2496ED" },
-       { name: "Kafka", icon: SiApachekafka, color: "#ffffff" },
-        {name:"Postman", icon:PostmanoriginalIcon, color:"#EF5B25"},
-       
+        { name: "GitHub", icon: FaGithub, color: "#ffffff" },
+        { name: "Docker", icon: FaDocker, color: "#2496ED" },
+        { name: "Kafka", icon: SiApachekafka, color: "#ffffff" },
+        // 2. Reference the unified wrapper here with the exact brand color
+        { name: "Postman", icon: PostmanIconWrapper, color: "#EF5B25" },
       ],
     },
   ]
@@ -75,8 +94,7 @@ export default function Skills() {
     "CI/CD",
     "Front-End Development",
     "Cloud Basics",
-  "System Design Basics",
-
+    "System Design Basics",
   ]
 
   return (
